@@ -21,7 +21,7 @@ import { DialogTitle, DialogActions, DialogContent, DialogContentText } from "@m
 interface DeleteWorkspaceModalProps {
   open: boolean, 
   setOpen: React.Dispatch<React.SetStateAction<boolean>>, 
-  handleDeleteWorkspace: () => void, 
+  handleDeleteWorkspace: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void, 
   value: string,
 }
 

@@ -16,10 +16,11 @@
 import classes from './Buttons.module.css'
 
 interface ButtonIBMProps {
-    handleClick: () => void,
+    handleClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void,
     disabled?: boolean,
     text: string,
     className: string,
+    style?: React.CSSProperties,
 }
 
 const ButtonIBM = ({ handleClick, disabled, text, className, ...rest } : ButtonIBMProps) => {
